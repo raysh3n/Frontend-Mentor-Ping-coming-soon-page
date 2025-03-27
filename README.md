@@ -41,8 +41,8 @@ Desktop
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/responsive-ping-coming-soon-page-QOON5irdUh)
+- Live Site URL: [here](https://fem-ping-coming-soon-page-raysh3n.netlify.app/)
 
 
 
