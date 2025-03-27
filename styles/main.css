@@ -1,0 +1,244 @@
+:root {
+	/* Primary   */
+	--clr-blue: 223, 87%, 63%;
+	/* Secondary  */
+	--clr-pale-blue: 223, 100%, 88%;
+	--clr-light-red: 354, 100%, 66%;
+	/* Neutral  */
+	--clr-gray: 0, 0%, 59%;
+	--clr-very-dark-blue: 209, 33%, 12%;
+
+	/* Font Weight */
+	--font-weight-300: 300;
+	--font-weight-600: 600;
+	--font-weight-700: 700;
+}
+
+*, *::after, *::before {
+	font-family: "Libre Franklin", serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+
+
+
+i, i::before {
+	font-family: "Font Awesome 6 Brands";
+	/*without this, font-family *:before will cause the icon not be able to load*/
+}
+
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	user-select: none;
+	max-width: 100%;
+}
+
+body {
+	background-color: hsla(var(--clr-grayish-blue), 0.3);
+	height: 100dvh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.brand {
+	font-weight: var(--font-weight-700);	
+	text-align: center;
+	padding-bottom: 2rem;
+	margin-top: 4rem;	
+	font-size: 1.2rem;
+}
+
+.brand, h1, p {
+	text-align: center;
+}
+
+p {
+	font-size: 0.8rem;
+
+}
+
+
+h1 {
+	letter-spacing: 0.05rem;
+	font-size: 1.3rem;
+	padding-inline: 0.3rem;
+
+}
+
+h1>span {
+	font-weight: var(--font-weight-300);
+	color: hsl(var(--clr-gray));
+	font-size: inherit;
+}
+
+.subscribe {
+	padding-block: 1.5rem;
+	/* outline: 1px solid black; */
+}
+
+form {
+	/* outline: 1px solid black; */
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding-top: 1rem;
+	padding-inline: 0.8rem;
+	max-width: 20rem;
+	margin-inline: auto;
+}
+
+input {
+	padding-left: 1.5rem;
+	height: 2.5rem;
+	border-radius: 20px;
+	border: 2px solid hsla(var(--clr-pale-blue));
+	width: 100%;
+}
+
+
+input::placeholder {
+	font-size: 15px;
+}
+
+
+
+button {
+	display: block;
+	height: 2.5rem;
+	border-radius: 20px;
+	background-color: hsl(var(--clr-blue));
+	font-weight: var(--font-weight-600);
+	font-size: 15px;
+	color: white;
+	border: none;
+	box-shadow: 0px 2px 10px rgba(45, 44, 44, 0.586);
+	cursor: pointer;
+}
+
+.img__container {
+	display: flex;
+	justify-content: center;
+	padding-inline: 0.5rem;
+	/* outline: 1px solid black; */
+}
+
+img {
+	margin-top: 4rem;
+	width: 100%;
+	/* padding-inline: 1.5rem; */
+	text-align: center;
+	max-width: 20rem;
+}
+
+.social__media {
+	margin-top: 5rem;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.social__media>div {
+	width: 2rem;
+	aspect-ratio: 1/1;
+	border: 0.5px solid hsl(var(--clr-pale-blue));
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-brands {
+	margin-top: 1px;
+	/* outline:1px solid red; */
+	color: hsl(var(--clr-blue));
+}
+
+.copyright {
+	font-size: 14px;
+	color: hsl(var(--clr-gray));
+	padding-block: 2rem;
+}
+
+
+.error {
+	color: red;
+	margin-top: 0.3rem;
+}
+
+.hide {
+	display: none;
+}
+
+.highlightError {
+	border: 2px solid red;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px/48rem and up) */
+@media only screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+		/* outline: 10px solid green; */
+
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1152px) {
+
+	.container {
+		max-width: 1152px;
+		/* outline: 10px solid blue; */
+	}
+
+	h1 {
+
+		font-size: 1.8rem;
+
+	}
+
+	form {
+		/* outline: 1px solid black; */
+		flex-direction: row;
+		max-width: 26rem;
+		padding-inline: 0;
+		justify-content: space-between;
+
+	}
+
+	.input__section {
+		flex: 2;
+	}
+
+	button {
+		flex: 1;
+	}
+
+	img {
+		max-width: 26rem;
+	}
+}
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
