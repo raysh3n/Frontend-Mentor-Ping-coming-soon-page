@@ -41,7 +41,7 @@ Desktop
 
 ### Links
 
-- Solution URL: [here](https://www.frontendmentor.io/solutions/responsive-ping-coming-soon-page-QOON5irdUh)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/responsive-ping-coming-soon-page-EZKjwyZrf9)
 - Live Site URL: [here](https://fem-ping-coming-soon-page-raysh3n.netlify.app/)
 
 
